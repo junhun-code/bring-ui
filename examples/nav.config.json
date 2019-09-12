@@ -1,0 +1,35 @@
+[
+  {
+    "title": "介绍",
+    "list": [
+      {
+        "path": "/",
+        "name": "introduce",
+        "desc": "introduce"
+      }
+    ]
+  },
+  {
+    "title": "弹层类",
+    "list": [
+      {
+        "path": "/color-picker",
+        "name": "color-picker",
+        "desc": "color-picker"
+      },
+      {
+        "path": "/message-box",
+        "name": "message-box",
+        "desc": "message-box"
+      }
+    ]
+  },
+  {
+    "title": "基础组件",
+    "list": []
+  },
+  {
+    "title": "表单类",
+    "list": []
+  }
+]

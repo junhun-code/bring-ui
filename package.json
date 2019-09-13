@@ -4,6 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "vue-cli-service serve",
+    "build:test": "vue-cli-service build --mode test",
+    "build:prod": "vue-cli-service build --mode production",
+    "upload:test": "node ./bin/upload.test.js",
+    "upload:prod": "node ./bin/upload.prod.js",
+    "deploy:test": "npm run build:test && npm run upload:test",
+    "deploy:prod": "npm run build:prod && npm run upload:prod",
     "build:lib": "vue-cli-service build --target lib --name vcolorpicker --dest lib packages/index.js",
     "lint": "vue-cli-service lint"
   },
@@ -26,6 +32,7 @@
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "markdown-it-container": "^2.0.0",
+    "scp2": "^0.5.0",
     "vue-loader": "^15.7.1",
     "vue-markdown-loader": "^2.4.1",
     "vue-template-compiler": "^2.6.10"
